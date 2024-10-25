@@ -12,6 +12,11 @@ def add_person():
     return person
 
 
-def display_people(people):
+def delete_people(people):
     for i, person in enumerate(person):
-        print(i + 1, "-", person[])
+        print(i + 1, "-", person["name"], "|", person["age"], "|", person["email"])
+
+    number = input("enter a number to delete: ")
+
+
+# def delete_contact(people):
